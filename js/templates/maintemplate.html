@@ -1,0 +1,129 @@
+<div class="signalWrap">
+    <div class="calculator">
+        <div class="calc-title">
+            <h2>401(k) Calculator</h2>
+            <p>Fill out the information below to see how much you’ll have to retire.</p>
+        </div>
+        <div class="signal-summary mobile">
+            <p id="signal-result-value-mob">
+                Your 401(k) could be worth after 30 years
+            </p>
+            <div class="signal-cta">
+                <a id="signal-btn-0" class="signal-primary-btn" href="#">SIGN UP</a>
+            </div>
+        </div>
+        <div class="signal-form-wrapper">
+            <div class="signal-form-grouped-element-wrap input_with_appended_unit_right">
+
+                <div class="signal-input-group">
+                    <label>Current Age</label>
+                    <span class="tooltip">{{error.currentAge}}</span>
+                    <input id="401_employee_current_age" type="text" />
+                </div>
+                <div class="signal-slider-wrapper">
+                    <div class="slider" id="401_employee_current_age_slider" class="integer" data-min="0" data-max="60" data-step="1" data-type="integer" data-default="25" data-model-target="currentAge"></div>
+                </div>
+            </div>
+
+            <div class="signal-form-grouped-element-wrap input_with_appended_unit_right">
+
+                <div class="signal-input-group">
+                    <label>Percent to Contribute</label>
+                    <span class="tooltip"></span>
+                    <input id="401_employee_contribution" />
+                </div>
+                <div class="signal-slider-wrapper">
+                    <div class="slider" id="401_employee_contribution_slider" data-min="0" data-max="60" data-default="25" data-step="1" data-type="percentage" data-model-target="annualContribution"></div>
+                </div>
+            </div>
+
+            <div class="signal-form-grouped-element-wrap input_with_appended_unit_right">
+                <div class="signal-input-group">
+                    <label>Annual Salary</label>
+                    <span class="tooltip">{{{error.annualSalary}}}</span>
+                    <input id="401_employee_salary" type="text" class="currency" value="" />
+                </div>
+                <div class="signal-slider-wrapper">
+                    <div class="slider" id="401_employee_salary_slider" data-min="0" data-max="1000000" data-default="40000" data-step="1" data-type="currency" data-model-target="annualSalary"></div>
+                </div>
+            </div>
+
+            <div class="signal-form-grouped-element-wrap input_with_appended_unit_right">
+
+                <div class="signal-input-group">
+                    <label>Age of Retirement</label>
+                    <span class="tooltip">{{error.retirementAge}}</span>
+                    <input id="401_employee_age_of_retirement" type="text" />
+                </div>
+
+                <div class="signal-slider-wrapper">
+                    <div class="slider" id="401_employee_age_of_retirement_slider" class="integer" data-min="30" data-max="70" data-step="1" data-type="integer" data-default="60" data-model-target="retirementAge"></div>
+                </div>
+            </div>
+
+            <div class="signal-form-grouped-element-wrap input_with_appended_unit_right">
+
+                <div class="signal-input-group">
+                    <label>Current 401(k) Balance</label>
+                    <span class="tooltip">{{error.retirementAge}}</span>
+                    <input id="401_employee_current_balance" type="text" />
+                </div>
+
+                <div class="signal-slider-wrapper">
+                    <div class="slider" id="401_employee_current_balance_slider" class="integer" data-min="0" data-max="10000000" data-custom-range="" data-step="1" data-type="currency" data-default="5000" data-pips="widerange" data-model-target="currentBalance"></div>
+                </div>
+            </div>
+
+            <div class="assumptions closed">
+                <h2 id="signal_401_assumption_toggle">Assumptions <span class="arrow"></span></h2>
+                <div class="assumptions_content">
+                    <div class="signal-form-grouped-element-wrap input_with_appended_unit_right">
+                        <div class="signal-input-group">
+                            <label>Annual Salary Increase</label>
+                            <span class="tooltip">{{error.annualSalaryIncrease}}</span>
+                            <input id="401_employee_salary_increase" type="text" />
+                        </div>
+
+                        <div class="signal-slider-wrapper">
+                            <div class="slider" id="401_employee_salary_increase_slider" data-min="0" data-max="100" data-default="2" data-step="1" data-type="percentage" data-model-target="annualSalaryIncrease"></div>
+                        </div>
+                    </div>
+
+                    <div class="signal-form-grouped-element-wrap input_with_appended_unit_right">
+
+                        <div class="signal-input-group">
+                            <label>Annual Rate of Return</label>
+                            <span class="tooltip">{{error.annualGrowthRate}}</span>
+                            <input id="401_annual_rate_of_return" type="text" />
+                        </div>
+
+                        <div class="signal-slider-wrapper">
+                            <div class="slider" id="401_annual_rate_of_return_slider" class="percentage" data-min="0" data-max="100" data-default="7" data-step="1" data-type="percentage" data-model-target="annualGrowthRate"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="signal-results-wrapper">
+            <div class="signal-results-title"> 401(k) Balance by Year </div>
+            <div class="signal-chart-wrapper">
+                <canvas id="signal_401_result_chart" width="361" height="275"></canvas>
+            </div>
+            <div class="signal-summary-wrapper">
+                <div class="signal-summary">
+                    <p id="signal-result-value">
+                        Your 401(k) could be worth after 30 years
+                    </p>
+                    <div class="signal-cta">
+                        <a id="signal-btn-0" class="signal-primary-btn" href="#">SIGN UP</a>
+                        <a id="signal-btn-1" class="signal-secondary-btn signal-btn-1" href="#">APPLY NOW</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br style="clear:both;" />
+    </div>
+</div>
