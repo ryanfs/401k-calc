@@ -222,7 +222,7 @@ require(['clientScript', 'ractive', 'ractiveTooltip', 'nouislider', 'chartjs', '
             return newVal;
         },
         parse_percentage: function(cval) {
-            var newVal = (parseFloat(cval.replace(/[%,]/g, '')) / 100).toFixed(0);
+            var newVal = parseFloat(cval.replace(/[%,]/g, '')) / 100;
             return newVal;
         },
         key_limit_percentage: function(key) {
@@ -234,8 +234,7 @@ require(['clientScript', 'ractive', 'ractiveTooltip', 'nouislider', 'chartjs', '
             }
         },
         format_currency: function(num) {
-            num = parseFloat(num);
-            num = num.toFixed(0);
+            num = parseFloat(num).toFixed(0);
             return '$'.concat(num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,"));
         },
 
@@ -349,12 +348,17 @@ require(['clientScript', 'ractive', 'ractiveTooltip', 'nouislider', 'chartjs', '
                     if (app.sliders[key].sliderEl.hasAttribute('data-default')) {
                         app.mainView.set(app.sliders[key].sliderEl.getAttribute('data-model-target'),
                             app["parse_" + app.sliders[key].sliderEl.getAttribute('data-type')](app.sliders[key].sliderEl.getAttribute('data-default')));
+
+
+
                         options['start'] = parseInt(app.sliders[key].sliderEl.getAttribute('data-default'));
 
                     }
                     if (app.sliders[key].sliderEl.hasAttribute('data-step')) {
                         options['step'] = parseInt(app.sliders[key].sliderEl.getAttribute('data-step'));
                     }
+
+
                     noUiSlider.create(app.sliders[key].sliderEl, options, true);
 
                     app.sliders[key].sliderEl.noUiSlider.on('update', function(values, handle) {
