@@ -133,6 +133,22 @@ h3 {
   text-align: center;
 }
 
+.logo-img {
+  width: 33%;
+  height: 100px;
+  display: block;
+  background-image: url("https://via.placeholder.com/100");
+  float: right;
+  margin: 30px 8%!important;
+}
+
+@media screen and (min-width: 950px) {
+  .logo-img {
+    width: 40%;
+    margin: 30px 0!important;
+  }
+}
+
 /*
 add placehodler for client logo`
 decrease line height on the labels

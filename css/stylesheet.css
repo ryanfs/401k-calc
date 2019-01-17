@@ -329,7 +329,6 @@
   position: absolute;
   width: 30%;
   right: 0%;
-  height: 18px;
   background: #ffffff;
   padding: 12px;
   top: -100px;
@@ -624,14 +623,15 @@
     position: absolute;
     width: 30%;
     right: 0%;
-    height: 32px;
+    height: 100%;
     background: #ffffff;
-    padding: 25px;
+    padding: 10px;
     top: -100px;
     text-align: center;
     z-index: 10;
     border-radius: 12px;
     border: 1px solid #467cb9;
+    font-size: 14px;
   }
   .signalContainer .signalWrap .calculator .signal-form-wrapper .signal-form-grouped-element-wrap .signal-input-group .tooltip:after {
     position: absolute;
@@ -868,13 +868,14 @@
     position: absolute;
     width: 30%;
     right: -4%;
-    height: 32px;
+    height: 100%;
     background: #ffffff;
     padding: 25px 12px;
     top: -100px;
     text-align: left;
     z-index: 10;
     border-radius: 12px;
+    font-size: 14px;
   }
   .signalContainer .signalWrap .calculator .signal-form-wrapper .signal-form-grouped-element-wrap .signal-slider-wrapper {
     width: 100%;
