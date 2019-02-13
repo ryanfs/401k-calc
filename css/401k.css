@@ -137,9 +137,19 @@ h3 {
   width: 33%;
   height: 100px;
   display: block;
-  background-image: url("https://via.placeholder.com/100");
+  background-image: url("https://www.signalintent.com/wp-content/uploads/2018/09/signalintentlogo-black.png");
   float: right;
   margin: 30px 8%!important;
+  background-size: contain;
+}
+
+.your-logo-here {
+  font-size: 15px!important;
+  color: #666;
+  font-style: italic!important;
+  position: relative;
+  top: 100px;
+  left: 3px;
 }
 
 @media screen and (min-width: 950px) {
