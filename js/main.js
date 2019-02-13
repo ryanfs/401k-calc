@@ -620,7 +620,7 @@ require(['clientScript', 'ractive', 'ractiveTooltip', 'nouislider', 'chartjs', '
             for (var y = 1; y <= cdata.term; y++) {
 
                 futureValues[y] = {};
-                futureValues[y].age = cdata.currentAge + y;
+                futureValues[y].age = Number(cdata.currentAge) + Number(y);
                 if (y == 1) {
 
                     futureValues[y].annualSalary = cdata.annualSalary;
