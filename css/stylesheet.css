@@ -242,7 +242,6 @@
 }
 .signalContainer .signalWrap {
   padding: 0px;
-  border: 1px solid #cfcfcf;
 }
 .signalContainer .signalWrap .calculator {
   padding: 10px 0%;
@@ -539,7 +538,6 @@
   }
   .signalContainer .signalWrap {
     padding: 0px;
-    border: 1px solid #cfcfcf;
   }
   .signalContainer .signalWrap .calculator {
     padding: 15px 0%;
